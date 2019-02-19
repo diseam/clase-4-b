@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+<!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hola Mundo</title>
+<!-- Search Engine -->
+    <meta name="description" content="Hola">
+<!-- Schema.org for Google -->
+    <meta itemprop="name" content="Hola Mundo">
+    <meta itemprop="description" content="Hola">
+<!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hola Mundo">
+    <meta name="twitter:description" content="Hola">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Hola Mundo">
+    <meta name="og:description" content="Hola">
+    <meta name="og:type" content="website">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-7 p-5 m-auto">
+                <h1><i class="fab fa-think-peaks"></i> Fran</h1>
+                <p>Bacana y multidisciplinada</p>
+                <select class="form-control" id="seleccionador">
+                    <option>Escoge una opción…</option>
+                    <option value="a">BMX</option>
+                    <option value="b">CicloCross</option>
+                    <option value="c">Single Speed</option>
+                    <option value="d">Triatlon</option>
+                </select>
+            </div><!--col-10-->
+
+            <div class="col-sm-10 col-md-9 col-lg-8 col-xl-7 p-5 m-auto">
+                <img src="img/blank.png" id="my_image" class="img-fluid">
+            </div><!--col-10-->
+
+        </div><!--row-->
+    </div><!--container-->
+    
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Mi primer script -->
+    <script>
+    $('#seleccionador').change(function() {
+        var variable = $(this).val();
+        if(variable=="a"){
+            $('#my_image').attr('src','img/bmx.jpg');
+        } else if(variable=="b"){
+            $('#my_image').attr('src','img/cx.jpg');
+        } else if(variable=="c"){
+            $('#my_image').attr('src','img/fixie.jpg');
+        } else if(variable=="d"){
+            $('#my_image').attr('src','img/tri.jpg');
+        }
+    });
+    </script>  
+  </body>
+</html>

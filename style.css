@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Raleway');
+
+html, body{
+	height:100%;
+}
+
+body{
+font-family: 'Raleway', sans-serif;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#40c0d1+0,a62ad3+99 */
+background: rgb(64,192,209); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(64,192,209,1) 0%, rgba(166,42,211,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(64,192,209,1) 0%,rgba(166,42,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(64,192,209,1) 0%,rgba(166,42,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40c0d1', endColorstr='#a62ad3',GradientType=0 ); /* IE6-9 */
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Fredoka One', cursive;
+}
+
+h1{
+	color:rgba(255,255,255,1);
+	text-shadow: 2px 2px 2px rgba(166,42,211,1); 
+}
