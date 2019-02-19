@@ -22,3 +22,8 @@ h1{
 	color:rgba(255,255,255,1);
 	text-shadow: 2px 2px 2px rgba(166,42,211,1); 
 }
+
+img#my_image{
+min-width:800px;
+min-height:600px;
+}
